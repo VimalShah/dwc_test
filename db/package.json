@@ -1,0 +1,24 @@
+{
+  "name": "dwc_test",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/hdi-deploy": "^3.*"
+  },
+  "scripts": {
+    "start": "node node_modules/@sap/hdi-deploy/deploy.js"
+  },
+  "cds": {
+    "hana": {
+      "deploy-format": "hdbtable"
+    },
+    "requires": {
+      "db": {
+        "kind": "sql"
+      }
+    }
+  }
+}

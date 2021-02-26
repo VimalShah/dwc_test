@@ -1,0 +1,8 @@
+{ 
+  "::DWC_ACCESS" : {
+    "target" : {
+    "schema" : "<EXAMPLE_SYS>", // optional
+    "object" : "<EXAMPLE_DUMMY>",
+    }
+}
+}

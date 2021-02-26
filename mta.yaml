@@ -1,0 +1,27 @@
+_schema-version: "2.1"
+ID: dwc_test
+version: 0.0.1
+modules:
+- name: db
+  type: hdb
+  path: db
+  requires:
+  - name: hdi_db
+    properties:
+      TARGET_CONTAINER: ~{hdi-container-name}
+  - name: UPS_DWC_SERVICE_NAME
+resources:
+- name: hdi_db
+  type: com.sap.xs.hdi-container
+  parameters:
+    config:
+      schema: ACTIVATE_WARP
+      database_id: 62a63876-e153-4c07-a6ed-477b68f3d6e0
+    service: hana
+    service-plan: hdi-shared
+  properties:
+    hdi-container-name: ${service-name}
+- name: UPS_DWC_SERVICE_NAME
+  type: org.cloudfoundry.existing-service
+  parameters:
+    service-name: UPS_DWC_ACTIVATE_WARP

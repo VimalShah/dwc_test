@@ -1,0 +1,8 @@
+{
+  "VW_RL_WEB_TRAFFIC": {
+    "target": {
+      "object": "VW_RL_WEB_TRAFFIC",
+      "schema.configure": "UPS_DWC_ACTIVATE_WARP/schema"
+    }
+  }
+}
